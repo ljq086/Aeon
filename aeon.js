@@ -17,24 +17,24 @@ window.__time = Number(new Date());
 /*# Include: core/Object.js */
 /*# Include: core/String.js */
 
-/*# Include: utils/Assert.js */
-/*# Include: utils/Cookie.js */
-/*# Include: utils/Event.js */
-/*# Include: utils/Log.js */
-/*# Include: utils/Xml.js */
-/*# Include: utils/Url.js */
-/*# Include: utils/Dom.js */
-/*# Include: utils/Css.js */
+/*# Include: aeon/utils/Assert.js */
+/*# Include: aeon/utils/Cookie.js */
+/*# Include: aeon/utils/Event.js */
+/*# Include: aeon/utils/Log.js */
+/*# Include: aeon/utils/Xml.js */
+/*# Include: aeon/utils/Url.js */
+/*# Include: aeon/utils/Dom.js */
+/*# Include: aeon/utils/Css.js */
 
-/*# Include: Event.js */
-/*# Include: Constants.js */
-/*# Include: Dispatcher.js */
-/*# Include: Initializer.js */
-/*# Include: QueryString.js */
-/*# Include: Settings.js */
+/*# Include: aeon/Event.js */
+/*# Include: aeon/Constants.js */
+/*# Include: aeon/Dispatcher.js */
+/*# Include: aeon/Initializer.js */
+/*# Include: aeon/QueryString.js */
+/*# Include: aeon/Settings.js */
 
-/*# Include: controls/ControlTypeInfo.js */
-/*# Include: controls/ControlRegistry.js */
-/*# Include: controls/HtmlControl.js */
+/*# Include: aeon/controls/ControlTypeInfo.js */
+/*# Include: aeon/controls/ControlRegistry.js */
+/*# Include: aeon/controls/HtmlControl.js */
 
 
