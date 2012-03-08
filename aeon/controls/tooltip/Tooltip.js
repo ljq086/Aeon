@@ -248,7 +248,8 @@ aeon.controls.Tooltip.prototype.getPrimaryLeft = function Tooltip$getPrimaryLeft
 
 	var arrowWidth = 6;
 	var tooltip = aeon.controls.Tooltip;
-	var elementLeft = tooltip.windowLeft + this.element.offset().left;
+	var scrollLeft = tooltip.document.documentElement.scrollLeft;
+	var elementLeft = tooltip.windowLeft + this.element.offset().left - scrollLeft;
 	var elementWidth = this.element.width();
 	var popupWidth = tooltip.popup.outerWidth() + arrowWidth;
 	var offset = this.settings.offset;
@@ -289,7 +290,8 @@ aeon.controls.Tooltip.prototype.getSecondaryLeft = function Tooltip$getSecondary
 	var result = { left: 0, arrowLeft: 0, arrowRight: 0 };
 
 	var tooltip = aeon.controls.Tooltip;
-	var elementLeft = tooltip.windowLeft + this.element.offset().left;
+	var scrollLeft = tooltip.document.documentElement.scrollLeft;
+	var elementLeft = tooltip.windowLeft + this.element.offset().left - scrollLeft;
 	var elementWidth = this.element.width();
 	var popupWidth = tooltip.popup.outerWidth();
 	var arrowWidth = 12;
@@ -353,7 +355,8 @@ aeon.controls.Tooltip.prototype.getPrimaryTop = function Tooltip$getPrimaryTop(o
 
 	var arrowHeight = 6;
 	var tooltip = aeon.controls.Tooltip;
-	var elementTop = tooltip.windowTop + this.element.offset().top;
+	var scrollTop = tooltip.document.documentElement.scrollTop;
+	var elementTop = tooltip.windowTop + this.element.offset().top - scrollTop;
 	var elementHeight = this.element.height();
 	var popupHeight = tooltip.popup.outerHeight() + arrowHeight;
 	var offset = this.settings.offset;
@@ -399,7 +402,8 @@ aeon.controls.Tooltip.prototype.getSecondaryTop = function Tooltip$getSecondaryT
 
 	var arrowHeight = 12;
 	var tooltip = aeon.controls.Tooltip;
-	var elementTop = tooltip.windowTop + this.element.offset().top;
+	var scrollTop = tooltip.document.documentElement.scrollTop;
+	var elementTop = tooltip.windowTop + this.element.offset().top - scrollTop;
 	var elementHeight = this.element.height() + arrowHeight;
 	var popupHeight = tooltip.popup.outerHeight();
 
