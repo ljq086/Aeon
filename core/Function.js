@@ -221,6 +221,12 @@ Function.prototype.inherits = function Function$inherits(ancestor)
 
 	this.prototype.$method = Function.$method;
 	this.prototype.$super = Function.$super;
+
+	if (arguments.length > 1)
+	{
+		var ctorArgs = Array.fromArguments(arguments, 1);
+		this.prototype.$super(ctorArgs);
+	}
 };
 
 /**
