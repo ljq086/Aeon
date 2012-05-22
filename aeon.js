@@ -37,4 +37,5 @@ window.__time = Number(new Date());
 /*# Include: aeon/controls/ControlRegistry.js */
 /*# Include: aeon/controls/HtmlControl.js */
 
+/*# Include: jquery/outerhtml.js */
 
